@@ -1,0 +1,15 @@
+# Very first thing has to be the name
+name: First Workflow
+
+# Define the event(s) that will trigger this action
+on: workflow_dispatch
+
+# 
+jobs:
+  first-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print greeting
+          run: echo "Hello, World!"
+        - name: Print goodbye
+          run: echo "Goodbye, (cruel) World!"
