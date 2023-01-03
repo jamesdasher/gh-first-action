@@ -13,3 +13,7 @@ jobs:
           run: echo "Hello, World!"
         - name: Print goodbye
           run: echo "Goodbye, (cruel) World!"
+        - name: Run multiple commands by piping commands
+          run: |
+            echo "First output"
+            echo "Second output"
