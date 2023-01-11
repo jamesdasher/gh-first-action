@@ -4,7 +4,7 @@ name: First Workflow
 # Define the event(s) that will trigger this action
 on: workflow_dispatch
 
-# 
+# only thing not reserved is the job name; could be "firstjob", "1stjob", "fred", etc.
 jobs:
   first-job:
       runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
         - name: Print greeting
           run: echo "Hello, World!"
         - name: Print goodbye
-          run: echo "Goodbye, (cruel) World!"
+          run: echo "Done! Goodbye, (cruel) World..."
         - name: Run multiple commands by piping commands
           run: |
             echo "First output"
